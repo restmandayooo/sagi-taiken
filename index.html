@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>詐欺体験ページ</title>
   <link rel="stylesheet" href="style.css"> <!-- ← CSSの読み込み -->
+
+</head>
+  <body>
 <script>
 import $ from "https://cdn.skypack.dev/jquery@3.6.0";
 import * as platform from "https://cdn.skypack.dev/platform@1.3.6";
@@ -33,9 +36,7 @@ $("#device").text(platform.description);
 $("#date").text(new Date().toLocaleString("ja-JP"));
 
 </script>
-</head>
-  <body>
-<!-- 免責バナー -->
+    <!-- 免責バナー -->
 <div class="disclaimer-banner" id="disclaimerBanner">
   <span>これは詐欺体験のためのページです。実際に請求はありませんのでご了承ください。</span>
   <button class="close-banner" onclick="document.getElementById('disclaimerBanner').style.display='none'">×</button>
